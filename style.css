@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  background: #6c63ff;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  height: 100vh;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  height: 85vh;
+  width: 90vw;
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 15px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  overflow: hidden;
+}
+
+img.birthday {
+  max-height: 40vh;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.text {
+  padding: 1em;
+  color: #333;
+}
+
+.muted {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.space {
+  height: 50px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body.play-music {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+  }
+}
